@@ -45,7 +45,7 @@
                 <img src="img/logo.png" class="img-fluid">
             </div>
             <div class="col-12 col-sm align-self-center">
-                <a href="#" class="btn btn-warning btn-block btn-sm" role="button">Reserve Table</a>
+                <a href="#reserveTable" class="btn btn-warning btn-block btn-sm" role="button">Reserve Table</a>
             </div>
           </div>
         </div>
@@ -102,23 +102,67 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
-          <div class="card">
-              <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-              <div class="card-body">
-                  <dl class="row">
-                      <dt class="col-6">Started</dt>
-                      <dd class="col-6">3 Feb. 2013</dd>
-                      <dt class="col-6">Major Stake Holder</dt>
-                      <dd class="col-6">HK Fine Foods Inc.</dd>
-                      <dt class="col-6">Last Year's Turnover</dt>
-                      <dd class="col-6">$1,250,375</dd>
-                      <dt class="col-6">Employees</dt>
-                      <dd class="col-6">40</dd>
-                  </dl>
+        <div class="row row-content align-self-center" id = "reserveTable">
+          <div class="col-sx-8">
+              <div class="card">
+                  <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                  <div class="card-body">
+                    <form>
+                      <div class="form-group row">
+                          <label for="radio" class="col-sx-4 col-form-label">Number of Guests</label>
+                          <div class="col-sx-8">
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio" checked>1
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">2
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">3
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">4
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">5
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">6
+                            </label>
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="date" class="col-sx-4 col-form-label">Date and Time</label>
+                        <input type="date" name="Date" placeholder="Date">
+                        <input type="time" name="Time" placeholder="Time">
+                      </div>
+                      <div class="form-group row">
+                          <div class="offset-md-2 col-md-10">
+                              <button type="submit" class="btn btn-primary">Reserve</button>
+                          </div>
+                      </div>
+                      </form>
+                  </div>
               </div>
           </div>
-        </div>
+          <!-- <div class="card">
+              <h3 class="card-header bg-warning text-white">Reserve a Table</h3> -->
+              <!-- <div class="card-body"> -->
+                <!-- <div class="form-group row">
+                    <label for="firstname" class="col-md-3 col-form-label">Number of Guests</label>
+                    <div class="col-md-8">
+                        <input type="radio" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastname" class="col-md-3 col-form-label">Last Name</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                    </div>
+                </div> -->
+              <!-- </div> -->
+          <!-- </div>
+        </div> -->
     </div>
 
     <footer class="footer">
